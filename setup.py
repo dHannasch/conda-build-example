@@ -7,5 +7,5 @@ setup(name='funniest',
       author='Flying Circus',
       author_email='flyingcircus@example.com',
       license='MIT',
-      packages=find_packages(),
+      packages=find_packages('src'),
       zip_safe=False)
