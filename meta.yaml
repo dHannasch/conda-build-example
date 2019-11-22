@@ -16,7 +16,8 @@ build:
 requirements:
   build:
     - git
-    - numpy
+    - numpy<2.0a0
+    - graph-tool
     # https://github.com/conda/conda-build/issues/2286
     # you can't add channels in the meta.yaml file.  You can, however add them to condarc, and conda-build will respect that
     # Conda 4.4 adds some very nice ways of specifying channel on a per-package basis, and conda-build will add support for those specs in meta.yaml sometime soon.
@@ -24,10 +25,12 @@ requirements:
   host:
     - pip
     - python
-    - numpy
+    - numpy<2.0a0
+    - graph-tool
   run:
     - python
-    - numpy
+    - numpy<2.0a0
+    - graph-tool
 
 test:
   imports:
