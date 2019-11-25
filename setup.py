@@ -1,5 +1,7 @@
 from setuptools import setup, find_packages
+import pip
 
+raise Exception(pip.__version__)
 setup(name='funniest',
       version='0.1',
       description='The funniest joke in the world',
@@ -8,4 +10,5 @@ setup(name='funniest',
       author_email='flyingcircus@example.com',
       license='MIT',
       packages=find_packages('src'),
+      package_dir={'': 'src'},
       zip_safe=False)
