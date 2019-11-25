@@ -6,7 +6,8 @@ package:
   version: "{{ version }}"
 
 source:
-  git_url: ./
+  path: ./
+  # git_url ./
 
 build:
   number: 0
